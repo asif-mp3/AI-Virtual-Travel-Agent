@@ -1,9 +1,9 @@
 :warning: This service is still in production.
 
 
-# Virtual Travel Agent
+# AI-Virtual Travel Agent
 
-**Virtual Travel Agent** is designed to simplify vacation planning by generating personalized itineraries based on specific user inputs. The system leverages a multi-agent architecture, where each agent performs a distinct role to ensure a seamless vacation planning experience.
+**AI-Virtual Travel Agent** is designed to simplify vacation planning by generating personalized itineraries based on specific user inputs. The system leverages a multi-agent architecture, where each agent performs a distinct role to ensure a seamless vacation planning experience.
 
 ## System Architecture
 
@@ -38,4 +38,9 @@ This multi-agent architecture allows the system to work efficiently, delivering 
 - [x] Add Smooth Scrolling
 - [ ] Add User Support (with Login Pages, MySQL backend, Custom User pages)
 - [ ] Host the Server
+- [x] Integrate Tavily API for Real-time Data Fetching
+- [ ] Implement Personalized Itinerary Generation Logic
+- [ ] Add Planner Critique and Feedback System
+- [ ] Optimize Agent Communication for Faster Query Processing
+
 
