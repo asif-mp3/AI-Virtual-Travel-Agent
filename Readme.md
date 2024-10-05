@@ -1,3 +1,6 @@
+:warning: This service is still in production.
+
+
 Virtual-Travel-Agent
 Designed to simplify vacation planning by generating personalized itineraries based on specific user inputs.
 
@@ -13,3 +16,10 @@ preferences and parameters.
 and incorporating new data into the itinerary.
 This structure allows the agents to work in harmony, ensuring a seamless and efficient
 vacation planning process. Figure 1 shows the overall architecture of the system.
+
+
+## Todo:
+- [x] Add Smooth Scrolling
+- [ ] Add User Support (with Login Pages, MySQL backend, Custom User pages)
+- [ ] Host the Server
+
