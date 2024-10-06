@@ -8,7 +8,7 @@ _ = load_dotenv()
 # General Imports
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Annotated, List
-from langgraph.checkpoint.sqlite import SqliteSaver
+
 from langchain_core.messages import AnyMessage, SystemMessage, HumanMessage, AIMessage, ChatMessage
 from pydantic import BaseModel
 
@@ -110,15 +110,15 @@ class ewriter():
         builder.add_edge("research_plan", "generate")
         builder.add_edge("reflect", "research_critique")
         builder.add_edge("research_critique", "generate")
-        memory = SqliteSaver(conn=sqlite3.connect(":memory:", check_same_thread=False))
+         #memory = SqliteSaver(conn=sqlite3.connect(":memory:", check_same_thread=False))
         # self.graph = builder.compile(
         #     checkpointer=memory,
         #     interrupt_after=['planner', 'generate', 'reflect', 'research_plan', 'research_critique']
         # )
         
-        self.graph = builder.compile(
-            checkpointer=memory,
-        )
+       # self.graph = builder.compile(
+        #    checkpointer=memory,
+        # )
 
     def plan_node(self, state: AgentState):
         messages = [
@@ -486,3 +486,4 @@ if __name__ == "__main__":
     MultiAgent = ewriter()
     app = writer_gui(MultiAgent.graph)
     app.launch()
+
