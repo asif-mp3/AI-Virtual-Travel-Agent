@@ -65,3 +65,26 @@ This multi-agent architecture allows the system to work efficiently, delivering 
 1. Clone the repository:
    ```bash
    git clone https://github.com/asif-mp3/AI-Virtual-Travel-Agent.git
+
+2. Navigate into the project directory:
+   ```bash
+   cd AI-Virtual-Travel-Agent
+3. Install the required dependencies:
+   - Make sure you have Python and pip installed on your machine. If not, download and install them from the [official Python website](https://www.python.org/downloads/).
+   - Install the necessary libraries by running:
+   ```bash
+   pip install -r requirements.txt
+4. Set up environment variables:
+   - Create a `.env` file in the project root directory. This file will store your API keys and other configurations securely.
+   - Add your API keys and configurations as needed. For example:
+     ```plaintext
+     TAVILY_API_KEY=your_api_key_here
+     ```
+   - Ensure you replace `your_api_key_here` with your actual API key from the Tavily API or any other services you are using.
+5. Run the application:
+   - Start the application by executing the following command:
+     ```bash
+     python app.py
+     ```
+   - This will launch the server, and you should see output indicating that the application is running.
+
