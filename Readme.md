@@ -1,52 +1,85 @@
 # AI Virtual Travel Agent
 
-:warning: **This service is currently in production.**
+> :warning: **This service is currently in production.**
 
 AI-powered travel planning service that integrates real-time data from various sources to deliver optimized, personalized vacation itineraries. Our multi-agent architecture ensures every trip is tailored to the user's preferences, offering a seamless vacation planning experience.
 
-## Key Features
+---
 
-- **Real-time Data Integration**: Leverages the **Tavily API** to pull live data from travel agencies, accommodations, and tourism platforms.
-- **Multi-agent Architecture**: Combines AI agents for efficient query handling and itinerary generation, ensuring faster response times and user satisfaction.
-- **Iterative Feedback Loop**: The Planner Critique Agent provides continuous feedback, refining the itinerary to meet the user's exact requirements.
-- **Customization**: Supports personalized itineraries with a wide range of options, from adventure trips to family-friendly experiences.
-- **User-Friendly Interface**: Designed to offer a seamless and intuitive experience, making vacation planning hassle-free.
+## Table of Contents
+1. [Key Features](#key-features)
+2. [Technology Stack](#technology-stack)
+3. [Installation and Setup](#installation-and-setup)
+4. [Project Roadmap](#project-roadmap)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-## Technology Stack
+---
 
-- **Frontend**:
-  - **Languages**: HTML, CSS, JavaScript
-  - **Key Features**: Smooth scrolling, responsive design for desktop and mobile, cross-browser compatibility
-- **Backend**:
-  - **Languages/Frameworks**: Node.js, Express
-  - **Key Features**: RESTful APIs, secure authentication, optimized routing, real-time data fetching
-- **Database**:
-  - **Type**: MySQL
-  - **Purpose**: Stores user profiles, itinerary data, preferences, and past trips for personalized recommendations
-- **API**: 
-  - **Source**: Tavily API for live travel data (accommodations, activities, transportation)
-  - **Function**: Real-time itinerary updates based on availability, user preferences, and current trends
-- **AI Agents**:
-  - **Language**: Python
-  - **Libraries**: Pandas, Numpy, Scikit-learn for logic handling, data processing, and itinerary evaluation
-- **Hosting**: 
-  - **Planned Platforms**: AWS or Heroku for scalability, reliability, and performance
+## :star: Key Features
 
-## Additional Features
+- **:globe_with_meridians: Real-time Data Integration**: Leverages the **Tavily API** to pull live data from travel agencies, accommodations, and tourism platforms.
+- **:robot: Multi-agent Architecture**: Combines AI agents for efficient query handling and itinerary generation, ensuring faster response times and user satisfaction.
+- **:repeat: Iterative Feedback Loop**: The Planner Critique Agent provides continuous feedback, refining the itinerary to meet the user's exact requirements.
+- **:memo: Customization**: Supports personalized itineraries with a wide range of options, from adventure trips to family-friendly experiences.
+- **:iphone: User-Friendly Interface**: Designed to offer a seamless and intuitive experience, making vacation planning hassle-free.
 
-- **Feedback Loop**: Continuous improvement through feedback from the Planner Critique Agent.
-- **User Customization**: Personalized travel experiences, including adventure, family-friendly activities, and cultural experiences.
-- **Mobile Responsiveness**: Optimized for a seamless experience across all devices.
-- **Third-party Integrations**: Upcoming support for services like Booking.com and Google Maps.
+---
 
-## Installation and Setup
+## :computer: Technology Stack
 
-### Prerequisites
+### **Frontend**:
+- **Languages**: HTML, CSS, JavaScript
+- **Key Features**: 
+  - :arrow_down_small: Smooth scrolling
+  - :iphone: Responsive design for desktop and mobile
+  - :globe_with_meridians: Cross-browser compatibility
+
+### **Backend**:
+- **Languages/Frameworks**: Node.js, Express
+- **Key Features**: 
+  - :arrows_counterclockwise: RESTful APIs
+  - :lock: Secure authentication
+  - :hourglass_flowing_sand: Optimized routing
+  - :zap: Real-time data fetching
+
+### **Database**:
+- **Type**: MySQL
+- **Purpose**: 
+  - Stores user profiles, itinerary data, preferences, and past trips for personalized recommendations
+
+### **API**:
+- **Source**: Tavily API for live travel data (accommodations, activities, transportation)
+- **Function**: 
+  - Real-time itinerary updates based on availability, user preferences, and current trends
+
+### **AI Agents**:
+- **Language**: Python
+- **Libraries**: 
+  - Pandas, Numpy, Scikit-learn for logic handling, data processing, and itinerary evaluation
+
+### **Hosting**: 
+- **Planned Platforms**: AWS or Heroku for scalability, reliability, and performance
+
+---
+
+## :rocket: Additional Features
+
+- **:repeat: Feedback Loop**: Continuous improvement through feedback from the Planner Critique Agent.
+- **:pencil2: User Customization**: Personalized travel experiences, including adventure, family-friendly activities, and cultural experiences.
+- **:iphone: Mobile Responsiveness**: Optimized for a seamless experience across all devices.
+- **:link: Third-party Integrations**: Upcoming support for services like Booking.com and Google Maps.
+
+---
+
+## :wrench: Installation and Setup
+
+### :warning: Prerequisites
 
 - **Python**: Ensure you have Python and `pip` installed. If not, you can download them from the [official Python website](https://www.python.org/downloads/).
 - **Node.js**: Install Node.js and npm (Node package manager) from [Node.js official website](https://nodejs.org/).
 
-### How to Run the Project
+### :file_folder: How to Run the Project
 
 1. **Clone the repository:**
     ```bash
@@ -63,63 +96,90 @@ AI-powered travel planning service that integrates real-time data from various s
     npm install
     ```
 
-4. **Install Python dependencies:**
-    - First, make sure you have Python set up.
-    - Then, install required libraries:
+4. **Run the Node.js server:**
+    ```bash
+    npm start
+    ```
+
+5. **Install Python dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
-5. **Set up environment variables:**
-    - Create a `.env` file in the project root directory to store API keys and configurations.
-    - Add your API keys and any other required configurations. For example:
-      ```plaintext
-      TAVILY_API_KEY=your_api_key_here
-      ```
-    - Make sure to replace `your_api_key_here` with your actual API key from Tavily or any other service.
-
-6. **Run the application:**
+6. **Run the Python server (AI agents):**
     ```bash
-    python app.py
+    python main.py
     ```
 
-    - The server will start, and you should see a message indicating that the application is running.
-    - Open your browser and navigate to `http://localhost:3000` to access the frontend.
+---
 
-## Roadmap / Todo
+## :dart: Project Roadmap
 
-- [x] Add Smooth Scrolling
-- [ ] Add User Support (Login Pages, MySQL backend, Custom User Pages)
-- [ ] Host the Server (on AWS or Heroku)
-- [x] Integrate Tavily API for Real-time Data Fetching
-- [ ] Implement Personalized Itinerary Generation Logic
-- [ ] Add Planner Critique and Feedback System
-- [ ] Optimize Agent Communication for Faster Query Processing
-- [ ] Create User Dashboard for Itinerary Management
-- [ ] Implement Multi-lingual Support for Global Users
-- [ ] Add Budget Optimization Feature for Cost-efficient Itineraries
-- [ ] Improve Mobile Responsiveness for Seamless Experience on All Devices
-- [ ] Integrate Third-party Services (e.g., Booking.com, Google Maps)
+### :construction_worker: **Phase 1: Initial Development**
+- :white_check_mark: **Research APIs** (Tavily, Booking.com, etc.)
+- :white_check_mark: **Build AI Agents** for query handling and itinerary planning
 
-## Contributing
+### :hourglass: **Phase 2: Backend & Frontend Integration**
+- :wrench: **Connect Tavily API** for real-time travel data
+- :hammer: **Build REST APIs** for frontend-backend communication
 
-Contributions are welcome! To get started:
+### :zap: **Phase 3: Testing & Feedback**
+- :eyes: **User Testing** for iterative improvements based on feedback
+- :bug: **Fix UI Bugs** and improve responsiveness
 
+### :tada: **Phase 4: Launch & Monitor**
+- :rocket: **Deploy on AWS or Heroku** for production use
+- :bar_chart: **Monitor User Feedback** and optimize based on usage
+
+---
+
+## :speech_balloon: Upcoming Features
+
+- **Integration with Booking.com** for accommodation options
+- **Google Maps API** for detailed location-based itineraries
+- **Integration with Blockchain** for secure payment and travel insurance handling
+- **Voice Assistant Integration**: Plan your vacation through voice commands!
+
+---
+
+## :handshake: Contributing
+
+We welcome contributions to improve **AI Virtual Travel Agent**! If you have ideas for features or spot issues, feel free to raise a Pull Request (PR) or open an issue.
+
+### Guidelines
 1. Fork the repository.
-2. Create a new branch:
+2. Clone your fork:
     ```bash
-    git checkout -b feature-branch-name
+    git clone https://github.com/your-username/AI-Virtual-Travel-Agent.git
     ```
-3. Make your changes and commit them:
+3. Create a branch for your feature/fix:
     ```bash
-    git commit -m "Add some feature"
+    git checkout -b feature/my-feature
     ```
-4. Push to the branch:
+4. Make your changes and commit them:
     ```bash
-    git push origin feature-branch-name
+    git commit -m "Add my feature"
     ```
-5. Open a pull request.
+5. Push your branch:
+    ```bash
+    git push origin feature/my-feature
+    ```
+6. Open a pull request with a detailed description of your changes.
 
-## License
+---
+
+## :lock: License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## :busts_in_silhouette: Contact
+
+For any queries or further information, feel free to reach out:
+
+- **Author**: Mohamed Asif M
+- **Email**: [asifoned@gmail.com](mailto:asifoned@gmail.com)
+- **LinkedIn**: [Mohamed Asif M](https://www.linkedin.com/in/mohamed-asif-m)
+
+---
