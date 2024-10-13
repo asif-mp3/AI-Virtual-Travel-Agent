@@ -150,7 +150,7 @@ We welcome contributions to improve **AI Virtual Travel Agent**! If you have ide
 1. Fork the repository.
 2. Clone your fork:
     ```bash
-    git clone https://github.com/your-username/AI-Virtual-Travel-Agent.git
+    git clone https://github.com/asif-mp3/AI-Virtual-Travel-Agent.git
     ```
 3. Create a branch for your feature/fix:
     ```bash
